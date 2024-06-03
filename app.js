@@ -20,7 +20,7 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     eventClick: function(info) {
         var idEvento = info.event.extendedProps.idEvento;
         var idTipo = info.event.extendedProps.idTipo;
-        window.location.href = 'verEvento.php?idEvento=' + idEvento + '&idTipo=' + idTipo
+        window.location.href = './eventos/verEvento.php?idEvento=' + idEvento + '&idTipo=' + idTipo;
     }
 });
 
