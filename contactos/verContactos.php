@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,46 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/f97bd9ed48.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Calendario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../eventos/nuevoTipoEvento.html"> Nuevo tipo de Evento </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../eventos/agregarEvento.php"> Crear Evento </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contactos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="agregarContactos.html">Agregar nuevo
+                                    contacto</a></li>
+                            <li><a class="dropdown-item" href="verContactos.php">Ver contactos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../info.html"> Como usar? </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid p-3">
         <h1 class="text-center">Listado de Contactos</h1>
         <div class="d-flex justify-content-center">
@@ -50,8 +87,10 @@
                                     <td><?= htmlspecialchars($datos->telefono) ?></td>
                                     <td><?= htmlspecialchars($datos->Email) ?></td>
                                     <td>
-                                        <a href="eliminar_contacto.php?Email=<?= htmlspecialchars($datos->Email) ?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                        <a href="modificar-contacto.php?Email=<?= htmlspecialchars($datos->Email) ?>" class="btn btn-small bg-warning"><i class="fa-solid fa-pen"></i></a>                                    
+                                        <a href="eliminar_contacto.php?Email=<?= htmlspecialchars($datos->Email) ?>"
+                                            class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                        <a href="modificar-contacto.php?Email=<?= htmlspecialchars($datos->Email) ?>"
+                                            class="btn btn-small bg-warning"><i class="fa-solid fa-pen"></i></a>
                                     </td>
                                 </tr>
                             <?php }
@@ -69,20 +108,28 @@
     </div>
 </body>
 <style>
-        /* Estilos personalizados para la tabla */
-        .table thead {
-            background-color: #17a2b8; /* Color de fondo del encabezado */
-            color: white; /* Color del texto del encabezado */
-        }
-        .table tbody tr:nth-child(even) {
-            background-color: #f2f2f2; /* Color de fondo para las filas pares */
-        }
-        .table tbody tr:hover {
-            background-color: #d1ecf1; /* Color de fondo al pasar el cursor */
-        }
-        .btn-small {
-            font-size: 1.2rem; /* Tamaño de fuente más pequeño para los botones */
-        }
-        
-    </style>
+    /* Estilos personalizados para la tabla */
+    .table thead {
+        background-color: #17a2b8;
+        /* Color de fondo del encabezado */
+        color: white;
+        /* Color del texto del encabezado */
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+        /* Color de fondo para las filas pares */
+    }
+
+    .table tbody tr:hover {
+        background-color: #d1ecf1;
+        /* Color de fondo al pasar el cursor */
+    }
+
+    .btn-small {
+        font-size: 1.2rem;
+        /* Tamaño de fuente más pequeño para los botones */
+    }
+</style>
+
 </html>
