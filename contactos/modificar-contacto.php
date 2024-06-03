@@ -4,7 +4,7 @@ echo $email;
 
 // Detalles de la conexión a la base de datos
 $serverName = "localhost";
-$connectionInfo = array("Database" => "pjCCV", "UID" => "acalel", "PWD" => "acalel");
+$connectionInfo = array("Database" => "pjCCV", "UID" => "pjCCV", "PWD" => "pjCCV");
 $conexion = sqlsrv_connect($serverName, $connectionInfo);
 
 // Verificar si la conexión se estableció correctamente
@@ -61,7 +61,7 @@ if ($stmt === false) {
             <div class="mb-3">
                 <input type="hidden" class="form-control" id="inputEmail" name="emailContac" value="<?= htmlspecialchars($datos->Email) ?>" required>
             </div>
-            <button  type="submit" class="btn btn-primary" name="btnregistro" value="ok">Modificar COntacto</button>
+            <button  type="submit" class="btn btn-primary" name="btnregistro" value="ok">Modificar Contacto</button>
         <?php }
         sqlsrv_free_stmt($stmt);
         sqlsrv_close($conexion);
