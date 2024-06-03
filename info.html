@@ -39,9 +39,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Calendario</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,7 +57,8 @@
                             Contactos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="contactos/agregarContactos.html">Agregar nuevo contacto</a></li>
+                            <li><a class="dropdown-item" href="contactos/agregarContactos.html">Agregar nuevo
+                                    contacto</a></li>
                             <li><a class="dropdown-item" href="contactos/verContactos.php">Ver contactos</a></li>
                         </ul>
                     </li>
@@ -85,73 +85,115 @@
 
         <section id="Introduccion">
             <h1>¡Bienvenido!</h1>
-            <p> Nos complace presentarte nuestra plataforma, diseñada para facilitar la gestión de tus contactos y eventos de manera sencilla y eficiente. Nuestro Calendario es el aliado perfecto para mantenerte organizado y conectado, ya sea en el ámbito personal o profesional.</p>
+            <p> Nos complace presentarte nuestra plataforma, diseñada para facilitar la gestión de tus contactos y
+                eventos de manera sencilla y eficiente. Nuestro Calendario es el aliado perfecto para mantenerte
+                organizado y conectado, ya sea en el ámbito personal o profesional.</p>
         </section>
 
         <section id="Calendario">
             <h2>Eventos</h2>
             <h3>Consulta de Eventos</h3>
-            <p>En la página principal, tendrás acceso a un calendario que muestra todos los eventos registrados hasta la fecha. En la parte superior, encontrarás varios botones que te permitirán navegar entre los meses y visualizar los diferentes eventos programados.</p>
+            <p>En la página principal, tendrás acceso a un calendario que muestra todos los eventos registrados hasta la
+                fecha. En la parte superior, encontrarás varios botones que te permitirán navegar entre los meses y
+                visualizar los diferentes eventos programados.</p>
             <img src="./img/paginaInicial.png" alt="calendario">
 
             <h3>Vistas Disponibles</h3>
             <p>En la esquina superior derecha del calendario, encontrarás varios botones:</p>
             <ul>
-            <li>
-                <strong>Mes:</strong> Visualización de todos los eventos de un mes completo.
-                <br>
-                <img src="./img/calendario.png" alt="Vista de mes">
-            </li>
-            <li>
-                <strong>Semana:</strong> Visualización detallada de los eventos, incluyendo la hora específica.
-                <br>
-                <img src="./img/semana.png" alt="Vista de semana">
-            </li>
-            <li>
-                <strong>Día:</strong> Visualización de los eventos de un día, con sus respectivas horas.
-                <br>
-                <img src="./img/dia.png" alt="Vista de día">
-            </li>
-            <li>
-                <strong>Agenda:</strong> Visualización en forma de lista de los eventos de un mes, mostrando el día y la hora.
-                <br>
-                <img src="./img/agenda.png" alt="Vista de agenda">
-            </li>
+                <li>
+                    <strong>Mes:</strong> Visualización de todos los eventos de un mes completo.
+                    <br>
+                    <img src="./img/calendario.png" alt="Vista de mes">
+                </li>
+                <li>
+                    <strong>Semana:</strong> Visualización detallada de los eventos, incluyendo la hora específica.
+                    <br>
+                    <img src="./img/semana.png" alt="Vista de semana">
+                </li>
+                <li>
+                    <strong>Día:</strong> Visualización de los eventos de un día, con sus respectivas horas.
+                    <br>
+                    <img src="./img/dia.png" alt="Vista de día">
+                </li>
+                <li>
+                    <strong>Agenda:</strong> Visualización en forma de lista de los eventos de un mes, mostrando el día
+                    y la hora.
+                    <br>
+                    <img src="./img/agenda.png" alt="Vista de agenda">
+                </li>
             </ul>
-            
-            <p>Para obtener detalles adicionales sobre un evento, simplemente haz clic en cualquier vista y selecciona el evento que desees.</p>
+            <p>Para obtener detalles adicionales sobre un evento, simplemente haz clic en cualquier vista y selecciona
+                el evento que desees.</p>
         </section>
 
         <section id="NuevoTipoEvento">
             <h3>Creación de un Nuevo Tipo de Evento</h3>
+            <p>En esta sección, tienes la capacidad de crear un nuevo tipo de evento definiendo dos parámetros
+                principales: el nombre del tipo de evento (por ejemplo, Cumpleaños, Tarea, Pago) y su frecuencia de
+                repetición:</p>
             <img src="./img/tipoEvento.png" alt="Crear tipo de evento" style="display: block; margin: auto;">
-            <p>En esta sección, tienes la capacidad de crear un nuevo tipo de evento definiendo dos parámetros principales: el nombre del tipo de evento (por ejemplo, Cumpleaños, Tarea, Pago) y su frecuencia de repetición:</p>
             <ul>
                 <li><strong>No repetir:</strong> El evento aparecerá solo una vez en la fecha especificada.</li>
                 <li><strong>Semanal:</strong> El evento se repetirá semanalmente en el mismo día de la semana.</li>
                 <li><strong>Mensual:</strong> El evento se repetirá mensualmente en el mismo día del mes.</li>
                 <li><strong>Anual:</strong> El evento se repetirá anualmente en la misma fecha del año.</li>
             </ul>
-            
             <img src="./img/repetir.png" alt="Frecuencia de repetición" style="display: block; margin: auto;">
         </section>
 
         <section id="CrearEvento">
             <h3>Creación de nuevo evento</h3>
+            <p>En esta sección, puedes agregar un nuevo evento al calendario proporcionando los siguientes detalles:
+                nombre del evento, fecha, hora, tipo de evento y una breve descripción.</p>
             <img src="./img/crearEvento.png" alt="Crear evento" style="display: block; margin: auto;">
-            <p>En esta sección, puedes agregar un nuevo evento al calendario proporcionando los siguientes detalles: nombre del evento, fecha, hora, tipo de evento y una breve descripción.</p>
-            <p>Para seleccionar la fecha y hora, simplemente haz clic en los iconos correspondientes para abrir un menú de selección.</p>            
+            <p>Para seleccionar la fecha y hora, simplemente haz clic en los iconos correspondientes para abrir un menú
+                de selección.</p>
             <img src="./img/fecha.png" alt="Seleccionar fecha" style="display: block; margin: auto;">
             <img src="./img/hora.png" alt="Seleccionar hora" style="display: block; margin: auto;">
+        </section>
+
+        <section id="verEvento">
+            <h3>Ver Eventos</h3>
+            <p>En este apartado se cumple la función de visualizar el evento seleccionado. Se ha agregado la función de
+                editar evento, así como la de eliminarlo. Los botones de lápiz y basurero cumplen sus respectivas
+                funciones.</p>
+            <img src="./img/verEvento.png" alt="Ver evento" style="display: block; margin: auto;">
+        </section>
+
+
+        <section id="ModificarEvento">
+            <h3>Modificación de evento</h3>
+            <p>En esta sección, puedes modificar un evento que fue agregado al calendario con posterioridad, los campos
+                a modificar son los siguientes detalles: nombre del evento, fecha, hora, tipo de evento y descripción.
+            </p>
+            <img src="./img/modificarEvento.png" alt="Modificar evento" style="display: block; margin: auto;">
         </section>
 
         <section id="Contacto">
             <h2>Contactos</h2>
             <h3>Creación de nuevo contacto</h3>
-            <p>En esta sección, puedes registrar amigos y familiares, añadiendo información como su cumpleaños, número telefónico, nombre, dirección y correo electrónico. Ten en cuenta: si el correo electrónico ya está asociado a otro contacto, no se registrará el nuevo contacto.</p>
+            <p>En esta sección, puedes registrar amigos y familiares, añadiendo información como su cumpleaños, número
+                telefónico, nombre, dirección y correo electrónico. Ten en cuenta: si el correo electrónico ya está
+                asociado a otro contacto, no se registrará el nuevo contacto.</p>
             <img src="./img/contactoNuevo.png" alt="Crear contacto" style="display: block; margin: auto;">
         </section>
 
+        <section id="verContacto">
+            <h3>Ver Contactos</h3>
+            <p>En este sitio, podemos visualizar la información de todos los contactos disponibles en nuestra base de
+                datos. Además, al igual que en la sección de ver eventos, se ha añadido la función de eliminar y editar
+                contacto al presionar su respectivo botón.</p>
+            <img src="./img/verContacto.png" alt="Ver contacto" style="display: block; margin: auto;">
+        </section>
+
+        <section id="ModificarContacto">
+            <h3>Modificación de contacto</h3>
+            <p>En esta sección, puedes modificar un contacto que fue agregado a la lista de contactos con posterioridad,
+                los campos a modificar son los siguientes detalles: nombre, fecha de nacimiento, dirección, teléfono.
+            </p>
+            <img src="./img/editarContacto.png" alt="Editar contacto" style="display: block; margin: auto;">
+        </section>
     </div>
 </body>
 
